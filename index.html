@@ -1,0 +1,123 @@
+<!-- This is the first page-->
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Contacts</title>
+
+</head>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=tel], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+input[type=file] {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  width: 30%;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input[type=button] {
+  background-color: #008CBA;;
+  border: none;
+  color: white;
+    width: 30%;
+
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #45a049;
+  color: white;
+  font-size: 30px;
+}
+</style>
+
+<body>
+<div class="header">
+  <h1>Contacts</h1>
+</div>
+<form  action="insert.php" method="POST">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" required><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" required><br>
+  <label for="email">Enter email:</label><br>
+  <input type="email" id="email" name="email" required><br>
+  <label for="phone">Enter phone number:</label><br>
+  <input type="phone" id ="phone" name="phone" required><br>
+  <label for="img">Select image:</label><br>
+  <input type="file" id="img" name="img" accept="image/*"><br>
+  <input type="submit" value="Submit">
+  <!-- Go to view/edit/update contacts-->
+  <input type="button" value="View all contacts" onclick="window.location.href='contacts.php'" />
+ </form>
+
+
+</body>
+
+</html>

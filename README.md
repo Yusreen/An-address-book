@@ -1,4 +1,4 @@
-# WeUsThem
+#Welcome to my adress book (a work in progress)
 Author: Yusreen Shah
 Email: syusreen@gmail.com
 
